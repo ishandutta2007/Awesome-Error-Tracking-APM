@@ -1,0 +1,222 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+
+    <linearGradient id="primaryGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="traceGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.2" />
+      <stop offset="30%" stop-color="#38bdf8" stop-opacity="0.9" />
+      <stop offset="70%" stop-color="#ec4899" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0.3" />
+    </linearGradient>
+
+    <radialGradient id="beaconGlowCyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="beaconGlowRose" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f43f5e" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#f43f5e" stop-opacity="0" />
+    </radialGradient>
+
+    <filter id="shadowFilter" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.8" />
+    </filter>
+
+    <filter id="glowFilter" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      /* Dynamic Animations */
+      @keyframes traceFlow {
+        0% { stroke-dashoffset: 1600; }
+        100% { stroke-dashoffset: 0; }
+      }
+
+      @keyframes pulseGlow {
+        0%, 100% { transform: scale(1); opacity: 0.6; }
+        50% { transform: scale(1.25); opacity: 0.95; }
+      }
+
+      @keyframes floatCard1 {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-7px); }
+      }
+
+      @keyframes floatCard2 {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(7px); }
+      }
+
+      @keyframes radarSweep {
+        0% { opacity: 0.2; transform: rotate(0deg); }
+        50% { opacity: 0.5; }
+        100% { opacity: 0.2; transform: rotate(360deg); }
+      }
+
+      .animated-trace {
+        stroke-dasharray: 400 80;
+        animation: traceFlow 9s linear infinite;
+      }
+
+      .animated-pulse-1 {
+        transform-origin: 180px 85px;
+        animation: pulseGlow 3s ease-in-out infinite;
+      }
+
+      .animated-pulse-2 {
+        transform-origin: 1040px 275px;
+        animation: pulseGlow 2.5s ease-in-out infinite 1s;
+      }
+
+      .float-badge-1 {
+        animation: floatCard1 4s ease-in-out infinite;
+      }
+
+      .float-badge-2 {
+        animation: floatCard2 4.5s ease-in-out infinite 0.5s;
+      }
+
+      .title-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-size: 42px;
+        font-weight: 900;
+        letter-spacing: -0.5px;
+        fill: #ffffff;
+      }
+
+      .subtitle-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-size: 17px;
+        font-weight: 500;
+        fill: #94a3b8;
+        letter-spacing: 0.2px;
+      }
+
+      .pill-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace;
+        font-size: 13px;
+        font-weight: 600;
+      }
+    </style>
+  </defs>
+
+  <!-- Deep Background Layer -->
+  <rect width="1200" height="360" fill="url(#bgGradient)" rx="16" />
+
+  <!-- Subtle Blueprint / Grid Lines in Background -->
+  <g opacity="0.08" stroke="#38bdf8" stroke-width="1">
+    <line x1="0" y1="60" x2="1200" y2="60" />
+    <line x1="0" y1="120" x2="1200" y2="120" />
+    <line x1="0" y1="180" x2="1200" y2="180" />
+    <line x1="0" y1="240" x2="1200" y2="240" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+    <line x1="120" y1="0" x2="120" y2="360" />
+    <line x1="240" y1="0" x2="240" y2="360" />
+    <line x1="360" y1="0" x2="360" y2="360" />
+    <line x1="480" y1="0" x2="480" y2="360" />
+    <line x1="600" y1="0" x2="600" y2="360" />
+    <line x1="720" y1="0" x2="720" y2="360" />
+    <line x1="840" y1="0" x2="840" y2="360" />
+    <line x1="960" y1="0" x2="960" y2="360" />
+    <line x1="1080" y1="0" x2="1080" y2="360" />
+  </g>
+
+  <!-- Animated Tracing Waveform (Positioned to flow smoothly across background without obstructing text) -->
+  <path class="animated-trace" d="M -50,300 C 150,290 220,130 350,150 C 480,170 540,310 680,290 C 820,270 900,100 1020,120 C 1140,140 1180,260 1250,250" fill="none" stroke="url(#traceGrad)" stroke-width="3" filter="url(#glowFilter)" />
+  
+  <path opacity="0.3" d="M -50,310 C 180,310 250,210 380,220 C 500,230 620,330 780,320 C 920,310 1010,210 1250,220" fill="none" stroke="#6366f1" stroke-width="1.5" stroke-dasharray="6 6" />
+
+  <!-- Dynamic Glowing Telemetry Beacons (Far left and far right) -->
+  <g class="animated-pulse-1">
+    <circle cx="180" cy="85" r="38" fill="url(#beaconGlowCyan)" />
+    <circle cx="180" cy="85" r="6" fill="#38bdf8" />
+  </g>
+
+  <g class="animated-pulse-2">
+    <circle cx="1040" cy="275" r="40" fill="url(#beaconGlowRose)" />
+    <circle cx="1040" cy="275" r="6" fill="#f43f5e" />
+  </g>
+
+  <!-- Background Floating Telemetry Indicator Pills (Kept at edges to avoid center text) -->
+  <g class="float-badge-1" transform="translate(70, 70)">
+    <rect width="145" height="32" rx="16" fill="#0f172a" stroke="#1e293b" stroke-width="1.5" opacity="0.9" />
+    <circle cx="16" cy="16" r="4" fill="#10b981" />
+    <text x="28" y="21" class="pill-text" fill="#a7f3d0">HTTP 200 · 14ms</text>
+  </g>
+
+  <g class="float-badge-2" transform="translate(980, 70)">
+    <rect width="155" height="32" rx="16" fill="#0f172a" stroke="#1e293b" stroke-width="1.5" opacity="0.9" />
+    <circle cx="16" cy="16" r="4" fill="#f43f5e" />
+    <text x="28" y="21" class="pill-text" fill="#fecdd3">ERROR 500 · Handled</text>
+  </g>
+
+  <g class="float-badge-1" transform="translate(60, 260)">
+    <rect width="165" height="32" rx="16" fill="#0f172a" stroke="#1e293b" stroke-width="1.5" opacity="0.9" />
+    <circle cx="16" cy="16" r="4" fill="#38bdf8" />
+    <text x="28" y="21" class="pill-text" fill="#bae6fd">span_id: 0x4f89d</text>
+  </g>
+
+  <g class="float-badge-2" transform="translate(970, 260)">
+    <rect width="170" height="32" rx="16" fill="#0f172a" stroke="#1e293b" stroke-width="1.5" opacity="0.9" />
+    <circle cx="16" cy="16" r="4" fill="#a855f7" />
+    <text x="28" y="21" class="pill-text" fill="#e9d5ff">OTel · v1.34 OTLP</text>
+  </g>
+
+  <!-- High-Contrast Card Backdrop for Center Text (Ensures complete clarity and zero occlusion) -->
+  <rect x="230" y="55" width="740" height="235" rx="20" fill="#090d16" fill-opacity="0.75" stroke="#1e293b" stroke-width="1.5" filter="url(#shadowFilter)" />
+
+  <!-- Center Foreground Content -->
+  <g text-anchor="middle" transform="translate(600, 105)">
+    <!-- Small Category Pill -->
+    <rect x="-115" y="-12" width="230" height="26" rx="13" fill="#1e1b4b" stroke="#4f46e5" stroke-width="1" />
+    <text x="0" y="5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#a5b4fc" letter-spacing="1.5">PRODUCTION OBSERVABILITY</text>
+
+    <!-- Main Title -->
+    <text x="0" y="58" class="title-text">
+      Awesome Error Tracking &amp; APM
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="94" class="subtitle-text">
+      Curated Ecosystem of SaaS Leaders &amp; Open-Source Observability Stacks
+    </text>
+
+    <!-- Bottom Feature Pills -->
+    <g transform="translate(0, 135)">
+      <!-- Pill 1 -->
+      <g transform="translate(-240, 0)">
+        <rect x="-70" y="-14" width="140" height="28" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="0" y="4" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#cbd5e1">📊 APM &amp; Tracing</text>
+      </g>
+      <!-- Pill 2 -->
+      <g transform="translate(-80, 0)">
+        <rect x="-70" y="-14" width="140" height="28" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="0" y="4" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#cbd5e1">🐞 Crash Analytics</text>
+      </g>
+      <!-- Pill 3 -->
+      <g transform="translate(80, 0)">
+        <rect x="-75" y="-14" width="150" height="28" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="0" y="4" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#cbd5e1">📡 OpenTelemetry</text>
+      </g>
+      <!-- Pill 4 -->
+      <g transform="translate(240, 0)">
+        <rect x="-70" y="-14" width="140" height="28" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="0" y="4" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#cbd5e1">⚡ Self-Hosted</text>
+      </g>
+    </g>
+  </g>
+</svg>
