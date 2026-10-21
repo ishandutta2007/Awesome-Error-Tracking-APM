@@ -3,12 +3,15 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Error-Tracking-APM/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Error-Tracking-APM?style=social&color=white" alt="GitHub Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Error-Tracking-APM/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Error-Tracking-APM?style=social&color=white" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Error-Tracking-APM/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="License" /></a>
-  <a href="https://github.com/sindresorhus/awesome"><img src="https://img.shields.io/badge/Awesome-Ecosystem-ff69b4.svg?style=flat-square" alt="Awesome" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-Ecosystem-ff69b4.svg?style=flat-square" alt="Awesome" /></a>
   <a href="https://opentelemetry.io/"><img src="https://img.shields.io/badge/OpenTelemetry-Native-4279F4.svg?style=flat-square" alt="OpenTelemetry Native" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Error-Tracking-APM/pulls"><img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 </p>
 
 ---
@@ -29,6 +32,8 @@ Modern distributed systems, cloud microservices, and client-heavy single-page ap
 - [🧭 Decision Matrix: SaaS vs. Self-Hosted](#-decision-matrix-saas-vs-self-hosted)
 - [🛠️ Recommended Architecture Blueprints](#️-recommended-architecture-blueprints)
 - [🤝 Contributing Guidelines](#-contributing-guidelines)
+- [💖 Support & Community](#-support--community)
+- [⭐ Star History](#star-history)
 - [⚖️ Disclaimer & Licensing](#️-disclaimer--licensing)
 
 ---
@@ -219,6 +224,29 @@ Contributions, corrections, and new tool recommendations are welcome!
    - For SaaS tools: include vendor name, link, company size/valuation, exact starting price, exact free tier limits, and core focus.
    - For open-source tools: include GitHub repo link, star badge (`style=social&color=white`), tech stack, description, and place it in the correct star-count descending order.
 4. 🚀 Submit a **Pull Request** with a concise description of your changes.
+
+---
+
+## 💖 Support & Community
+
+Thank you so much for exploring and supporting the **Awesome Error Tracking & APM** ecosystem guide! Curating, updating, and researching these tools takes dedication and time.
+
+If you found this list helpful:
+- ⭐ **Star** this repository on GitHub to show your appreciation and boost its visibility!
+- 🍴 **Fork** the repo and contribute additions or updates.
+- 📢 **Share** this guide with teammates, DevOps peers, and developer communities.
+- ☕ **Buy a Coffee / Sponsor**: If you'd like to support ongoing development and maintenance, visit the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007). Your generosity makes a huge difference!
+
+<p align="center">
+  <a href="https://github.com/sponsors/ishandutta2007">
+    <img src="https://img.shields.io/badge/Sponsor-%E2%9D%A4-ea4aaa?style=for-the-badge&logo=github-sponsors" alt="Sponsor on GitHub" />
+  </a>
+</p>
+
+---
+
+##  Star History
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Error-Tracking-APM&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Error-Tracking-APM&type=date&legend=top-left)
 
 ---
 
